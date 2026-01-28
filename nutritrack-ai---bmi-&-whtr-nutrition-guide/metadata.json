@@ -1,0 +1,5 @@
+{
+  "name": "NutriTrack AI - BMI & WHtR Nutrition Guide",
+  "description": "A personalized health and nutrition recommendation system that calculates BMI and WHtR to provide AI-driven meal plans and recipe suggestions with clear explainability.",
+  "requestFramePermissions": []
+}
