@@ -89,7 +89,6 @@ exports.handler = async function(event) {
                   dinner: { type: Type.STRING },
                   totalCalories: { type: Type.NUMBER },
                   protein: { type: Type.NUMBER },
-.
                   fiber: { type: Type.NUMBER }
                 },
                 required: ["dayName", "breakfast", "lunch", "snack", "dinner", "totalCalories", "protein", "fiber"]
