@@ -1,5 +1,4 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<div align="center"><img width="1213" height="932" alt="Image" src="https://github.com/user-attachments/assets/8fe891f7-9219-4202-9388-54cd6e25e339" />
 </div>
 
 # NutriTrack AI - BMI & WHtR Nutrition Guide
