@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 import { UserData, HealthMetrics, Recipe, MealPlanDay } from "../types";
 import { BMI_CATEGORIES, WHTR_CATEGORIES } from "../constants";
