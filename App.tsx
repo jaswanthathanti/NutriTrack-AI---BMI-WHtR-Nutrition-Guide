@@ -71,10 +71,10 @@ const RecipeModal: React.FC<{ recipe: Recipe; onClose: () => void }> = ({ recipe
         {/* Image */}
         <div className="relative h-48 shrink-0 overflow-hidden">
           <img
-            src={`https://loremflickr.com/600/300/food,${encodeURIComponent(recipe.name)}`}
+            src={`https://loremflickr.com/600/300/food,recipe,dish,${encodeURIComponent(recipe.name)}/all`}
             alt={recipe.name}
             className="w-full h-full object-cover"
-            onError={e => { (e.target as HTMLImageElement).src = `https://loremflickr.com/600/300/healthy,food`; }}
+            onError={e => { (e.target as HTMLImageElement).src = `https://loremflickr.com/600/300/healthy,food,meal/all`; }}
             crossOrigin="anonymous"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -169,10 +169,10 @@ const RecipeCard: React.FC<{ recipe: Recipe; onOpenModal: (r: Recipe) => void }>
       {/* Recipe image */}
       <div className="relative h-44 overflow-hidden shrink-0">
         <img
-          src={`https://loremflickr.com/400/250/food,${imgQuery}`}
+          src={`https://loremflickr.com/400/250/food,recipe,meal,${imgQuery}/all`}
           alt={recipe.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          onError={e => { (e.target as HTMLImageElement).src = `https://loremflickr.com/400/250/healthy,food`; }}
+          onError={e => { (e.target as HTMLImageElement).src = `https://loremflickr.com/400/250/healthy,food,meal/all`; }}
           crossOrigin="anonymous"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
