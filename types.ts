@@ -28,6 +28,14 @@ export enum DietaryPreference {
   NonVeg = 'Non-Vegetarian'
 }
 
+export enum MedicalCondition {
+  None = 'None',
+  Diabetic = 'Diabetic',
+  ObesityOverweight = 'Obesity/Overweight',
+  Hypothyroidism = 'Hypothyroidism',
+  MetabolicSyndrome = 'Metabolic Syndrome',
+}
+
 export interface UserData {
   height: number | string;
   weight: number | string;
@@ -40,6 +48,7 @@ export interface UserData {
   favFood: string;
   cuisine: string;
   dietary: DietaryPreference;
+  medicalConditions: MedicalCondition[];
 }
 
 export interface HealthMetrics {
@@ -71,6 +80,8 @@ export interface Recipe {
   fiber: number;
   tags: string[];
   explanation: string;
+  ingredients: string[];
+  steps: string[];
 }
 
 export interface MealPlanDay {

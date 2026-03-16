@@ -1,5 +1,5 @@
 
-import { UserData, Gender, ExerciseFrequency, ActivityLevel, HealthGoal, DietaryPreference } from './types';
+import { UserData, Gender, ExerciseFrequency, ActivityLevel, HealthGoal, DietaryPreference, MedicalCondition } from './types';
 
 export const STEPS = [
   'Health Info',
@@ -22,6 +22,7 @@ export const DEFAULT_USER_DATA: UserData = {
   favFood: '',
   cuisine: 'Indian',
   dietary: DietaryPreference.Veg,
+  medicalConditions: [],
 };
 
 export const BMI_CATEGORIES = [
@@ -35,4 +36,37 @@ export const WHTR_CATEGORIES = [
   { min: 0, max: 0.42, label: 'Low', color: 'bg-blue-500', text: 'text-blue-600' },
   { min: 0.42, max: 0.52, label: 'Moderate', color: 'bg-emerald-500', text: 'text-emerald-600' },
   { min: 0.52, max: Infinity, label: 'High', color: 'bg-red-500', text: 'text-red-600' }
+];
+
+export const MEDICAL_CONDITIONS = [
+  {
+    value: MedicalCondition.None,
+    label: 'None',
+    icon: '✓',
+    desc: 'No specific condition'
+  },
+  {
+    value: MedicalCondition.Diabetic,
+    label: 'Diabetic',
+    icon: '🩸',
+    desc: 'Blood sugar management'
+  },
+  {
+    value: MedicalCondition.ObesityOverweight,
+    label: 'Obesity/Overweight',
+    icon: '⚖️',
+    desc: 'Weight management'
+  },
+  {
+    value: MedicalCondition.Hypothyroidism,
+    label: 'Hypothyroidism',
+    icon: '🦋',
+    desc: 'Thyroid health support'
+  },
+  {
+    value: MedicalCondition.MetabolicSyndrome,
+    label: 'Metabolic Syndrome',
+    icon: '💊',
+    desc: 'Cardiovascular & metabolic'
+  },
 ];
